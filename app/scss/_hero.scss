@@ -3,7 +3,9 @@
    max-width: 58%;
    height: 100%;
    padding: 60px 140px 160px 160px;
-   background: url(../../img/bg-pattern-desktop.svg);
+   background: linear-gradient(135deg, #ffffff, #fff5f5),
+      linear-gradient(135deg, #f8bfbf, #ee8b8b);
+   background-image: url(../../img/bg-pattern-desktop.svg);
    background-size: cover;
    background-repeat: no-repeat;
 
@@ -29,7 +31,7 @@
 
       p {
          line-height: 25px;
-         font-weight: 600;
+         //  font-weight: 600;
          color: $tuscany;
       }
    }
@@ -61,8 +63,9 @@
             padding: 16px 42px;
             outline: none;
             border-radius: 50px;
-            border: 1px solid $tuscany;
-            // border: none;
+            // border: 1px solid $tuscany;
+            border: none;
+            background: linear-gradient(to right, #f8bfbf, #ee8b8b);
          }
       }
    }
