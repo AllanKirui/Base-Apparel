@@ -16,6 +16,7 @@ body {
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 h1,
@@ -56,8 +57,9 @@ p {
 .hero {
   max-width: 58%;
   height: 100%;
-  padding: 60px 140px 160px 160px;
-  background: url(../../img/bg-pattern-desktop.svg);
+  padding: 60px 140px 160px 185px;
+  background: linear-gradient(135deg, #ffffff, #fff5f5), linear-gradient(135deg, #f8bfbf, #ee8b8b);
+  background-image: url(../../img/bg-pattern-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -84,12 +86,17 @@ p {
 
 .hero__text p {
   line-height: 25px;
-  font-weight: 600;
   color: #ce9797;
+  width: 432px;
+}
+
+.hero__form {
+  width: 440px;
 }
 
 .hero__form form {
   position: relative;
+  z-index: 1;
 }
 
 .hero__form form label {
@@ -105,6 +112,7 @@ p {
   border: 1px solid #ce9797;
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
+  background: none;
 }
 
 .hero__form form button {
@@ -115,7 +123,30 @@ p {
   padding: 16px 42px;
   outline: none;
   border-radius: 50px;
-  border: 1px solid #ce9797;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8b8b));
+  background: linear-gradient(to right, #f8bfbf, #ee8b8b);
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hero__form form button:hover {
+  background: #fad6d6;
+}
+
+.hero__form form button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 10px 15px #f3dddc;
+          box-shadow: 0 10px 15px #f3dddc;
+  z-index: -1;
 }
 
 .hero__image img {
