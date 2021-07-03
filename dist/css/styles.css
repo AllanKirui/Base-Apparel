@@ -52,4 +52,74 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.hero {
+  max-width: 58%;
+  height: 100%;
+  padding: 60px 140px 160px 160px;
+  background: url(../../img/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__logo {
+  margin-bottom: 125px;
+}
+
+.hero__text {
+  margin-top: 65px;
+  margin-bottom: 45px;
+}
+
+.hero__text h1 {
+  margin-bottom: 30px;
+  font-size: 4rem;
+  letter-spacing: 15px;
+}
+
+.hero__text h1 span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.hero__text p {
+  line-height: 25px;
+  font-weight: 600;
+  color: #ce9797;
+}
+
+.hero__form form {
+  position: relative;
+}
+
+.hero__form form label {
+  display: none;
+}
+
+.hero__form form input {
+  padding: 17px 32px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 3.125rem;
+  border: 1px solid #ce9797;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hero__form form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px 42px;
+  outline: none;
+  border-radius: 50px;
+  border: 1px solid #ce9797;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
