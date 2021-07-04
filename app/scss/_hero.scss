@@ -50,10 +50,18 @@
             border: none;
             width: 100%;
             border-radius: 3.125rem;
-            border: 1px solid $tuscany;
+            border: 1px solid $queen_pink;
             font-size: $font-nm;
             font-family: "Josefin Sans", sans-serif;
             background: none;
+
+            &::placeholder {
+               color: $queen_pink;
+            }
+
+            &:focus {
+               border: 2px solid $bittersweet;
+            }
          }
 
          button {
@@ -84,6 +92,32 @@
                border-radius: 50px;
                box-shadow: 0 10px 15px #f3dddc;
                z-index: -1;
+            }
+         }
+
+         img.error-icon {
+            position: absolute;
+            top: 50%;
+            right: 112px;
+            transform: translateY(-50%);
+            visibility: hidden;
+
+            &.error {
+               visibility: visible;
+            }
+         }
+
+         small {
+            position: absolute;
+            left: 34px;
+            bottom: -21px;
+            visibility: hidden;
+            font-size: $font-sm;
+
+            &.error {
+               visibility: visible;
+               color: $bittersweet;
+               color: red;
             }
          }
       }
