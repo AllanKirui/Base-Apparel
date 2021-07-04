@@ -109,10 +109,30 @@ p {
   border: none;
   width: 100%;
   border-radius: 3.125rem;
-  border: 1px solid #ce9797;
+  border: 1px solid #e1cfd1;
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
   background: none;
+}
+
+.hero__form form input::-webkit-input-placeholder {
+  color: #e1cfd1;
+}
+
+.hero__form form input:-ms-input-placeholder {
+  color: #e1cfd1;
+}
+
+.hero__form form input::-ms-input-placeholder {
+  color: #e1cfd1;
+}
+
+.hero__form form input::placeholder {
+  color: #e1cfd1;
+}
+
+.hero__form form input:focus {
+  border: 2px solid #f96262;
 }
 
 .hero__form form button {
@@ -147,6 +167,33 @@ p {
   -webkit-box-shadow: 0 10px 15px #f3dddc;
           box-shadow: 0 10px 15px #f3dddc;
   z-index: -1;
+}
+
+.hero__form form img.error-icon {
+  position: absolute;
+  top: 50%;
+  right: 112px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.hero__form form img.error-icon.error {
+  visibility: visible;
+}
+
+.hero__form form small {
+  position: absolute;
+  left: 34px;
+  bottom: -21px;
+  visibility: hidden;
+  font-size: 0.8125rem;
+}
+
+.hero__form form small.error {
+  visibility: visible;
+  color: #f96262;
+  color: red;
 }
 
 .hero__image img {
