@@ -38,6 +38,7 @@
       width: 440px;
       form {
          position: relative;
+         margin-bottom: 150px;
          z-index: 1;
 
          label {
@@ -119,6 +120,66 @@
                color: $bittersweet;
                color: red;
             }
+         }
+      }
+   }
+
+   &__footer {
+      .attribution {
+         font-size: $font-sm;
+
+         a {
+            text-decoration: none;
+            color: $tuscany;
+         }
+
+         // I'd like give credit to Free Frontend for the hover effect on the links
+         // (https://freefrontend.com/css-link-styles/)
+         .link {
+            cursor: pointer;
+            position: relative;
+            white-space: nowrap;
+         }
+
+         .link::before,
+         .link::after {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: $tuscany;
+            top: 100%;
+            left: 0;
+            pointer-events: none;
+         }
+
+         .link::before {
+            content: "";
+         }
+
+         .link-fancy::before {
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+         }
+
+         .link-fancy:hover::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
+            transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+         }
+
+         .link-fancy::after {
+            content: "";
+            top: calc(100% + 4px);
+            transform-origin: 0% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+         }
+
+         .link-fancy:hover::after {
+            transform-origin: 100% 50%;
+            transform: scale3d(1, 1, 1);
+            transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
          }
       }
    }
