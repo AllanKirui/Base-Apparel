@@ -96,6 +96,7 @@ p {
 
 .hero__form form {
   position: relative;
+  margin-bottom: 150px;
   z-index: 1;
 }
 
@@ -194,6 +195,78 @@ p {
   visibility: visible;
   color: #f96262;
   color: red;
+}
+
+.hero__footer .attribution {
+  font-size: 0.8125rem;
+}
+
+.hero__footer .attribution a {
+  text-decoration: none;
+  color: #ce9797;
+}
+
+.hero__footer .attribution .link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.hero__footer .attribution .link::before,
+.hero__footer .attribution .link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #ce9797;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.hero__footer .attribution .link::before {
+  content: "";
+}
+
+.hero__footer .attribution .link-fancy::before {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.hero__footer .attribution .link-fancy:hover::before {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+          transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+}
+
+.hero__footer .attribution .link-fancy::after {
+  content: "";
+  top: calc(100% + 4px);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.hero__footer .attribution .link-fancy:hover::after {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+          transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
 }
 
 .hero__image img {
