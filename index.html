@@ -20,6 +20,7 @@
          rel="stylesheet"
       />
       <link rel="stylesheet" href="dist/css/styles.css" />
+      <script defer src="app/js/script.js"></script>
 
       <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
       <style>
@@ -51,7 +52,7 @@
                </p>
             </div>
             <div class="hero__form">
-               <form>
+               <form novalidate>
                   <label for="email">Email</label>
                   <div>
                      <input
@@ -60,6 +61,8 @@
                         placeholder="Email Address"
                      />
                      <button><img src="img/icon-arrow.svg" alt="" /></button>
+                     <img class="error-icon" src="img/icon-error.svg" />
+                     <small>Error Message</small>
                   </div>
                </form>
             </div>
