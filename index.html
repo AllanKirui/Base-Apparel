@@ -21,20 +21,10 @@
       />
       <link rel="stylesheet" href="dist/css/styles.css" />
       <script defer src="app/js/script.js"></script>
-
-      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-      <style>
-         .attribution {
-            font-size: 11px;
-            text-align: center;
-         }
-         .attribution a {
-            color: hsl(228, 45%, 44%);
-         }
-      </style>
    </head>
    <body>
       <main class="container flex">
+         <!-- Logo, text, form and footer -->
          <div class="hero">
             <header>
                <div class="hero__logo">
@@ -43,6 +33,7 @@
                   /></a>
                </div>
             </header>
+
             <div class="hero__text">
                <h1><span>WE'RE</span> COMING SOON</h1>
                <p>
@@ -51,7 +42,9 @@
                   announcements and our launch deals.
                </p>
             </div>
+
             <div class="hero__form">
+               <!-- Disable default HTML validation with "novalidate" to use custom JS validation -->
                <form novalidate>
                   <label for="email">Email</label>
                   <div>
@@ -66,8 +59,29 @@
                   </div>
                </form>
             </div>
+
+            <div class="hero__footer">
+               <footer>
+                  <p class="attribution">
+                     Challenge by
+                     <a
+                        href="https://www.frontendmentor.io?ref=challenge"
+                        target="_blank"
+                        class="link link-fancy"
+                        >Frontend Mentor</a
+                     >. Coded by
+                     <a
+                        href="https://www.github.com/AllanKirui"
+                        target="_blank"
+                        class="link link-fancy"
+                        >Nalla Will Jr</a
+                     >.
+                  </p>
+               </footer>
+            </div>
          </div>
 
+         <!-- Hero image -->
          <div class="hero-image">
             <img
                src="img/hero-desktop.jpg"
@@ -75,16 +89,5 @@
             />
          </div>
       </main>
-
-      <footer>
-         <p class="attribution">
-            Challenge by
-            <a
-               href="https://www.frontendmentor.io?ref=challenge"
-               target="_blank"
-               >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-         </p>
-      </footer>
    </body>
 </html>
