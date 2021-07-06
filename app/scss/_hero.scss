@@ -8,8 +8,25 @@
    background-size: cover;
    background-repeat: no-repeat;
 
+   @include breakpoint-down(medium) {
+      padding: 60px 80px 160px 60px;
+   }
+   @include breakpoint-down(small) {
+      min-width: 100%;
+      background-image: none;
+      padding: 0 30px;
+   }
+
    &__logo {
       margin-bottom: 125px;
+
+      @include breakpoint-down(small) {
+         margin: 27px 0;
+
+         img {
+            height: 21px;
+         }
+      }
    }
 
    &__text {
@@ -31,6 +48,27 @@
          line-height: 25px;
          color: $tuscany;
          width: 432px;
+      }
+
+      @include breakpoint-down(small) {
+         margin-top: 62px;
+         margin-bottom: 36px;
+
+         h1,
+         p {
+            text-align: center;
+         }
+
+         h1 {
+            margin-bottom: 25px;
+            font-size: $font-md;
+            line-height: 44px;
+         }
+
+         p {
+            width: 100%;
+            font-size: $font-sm;
+         }
       }
    }
 
@@ -113,12 +151,27 @@
             left: 34px;
             bottom: -21px;
             visibility: hidden;
-            font-size: $font-sm;
+            font-size: $font-sml;
 
             &.error {
                visibility: visible;
                color: $bittersweet;
-               color: red;
+            }
+         }
+      }
+
+      @include breakpoint-down(small) {
+         width: 100%;
+
+         form {
+            margin-bottom: 92px;
+
+            button {
+               padding: 13.5px 28px;
+            }
+
+            img.error-icon {
+               right: 82px;
             }
          }
       }
@@ -126,7 +179,8 @@
 
    &__footer {
       .attribution {
-         font-size: $font-sm;
+         width: 430px;
+         font-size: $font-sml;
 
          // I'd like give credit to Free Frontend for the hover effect on the links
          // (https://freefrontend.com/css-link-styles/)
@@ -179,12 +233,26 @@
             transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
          }
       }
+
+      @include breakpoint-down(small) {
+         position: relative;
+         top: -10px;
+         .attribution {
+            width: 100%;
+            text-align: center;
+            line-height: 20px;
+         }
+      }
    }
 
    &__image {
-      img {
+      @include breakpoint-down(small) {
          width: 100%;
-         height: 100%;
+         img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+         }
       }
    }
 }
