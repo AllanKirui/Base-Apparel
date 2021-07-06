@@ -26,7 +26,6 @@ p {
    margin: 0 auto;
    max-width: 90rem;
    height: 800px;
-   //    position: relative;
 
    @include breakpoint-down(small) {
       height: 100%;
