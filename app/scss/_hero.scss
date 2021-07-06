@@ -2,8 +2,8 @@
    max-width: 58%;
    height: 100%;
    padding: 60px 140px 160px 185px;
-   background: linear-gradient(135deg, #ffffff, #fff5f5),
-      linear-gradient(135deg, #f8bfbf, #ee8b8b);
+   background: linear-gradient(135deg, $white, $lavender_blush),
+      linear-gradient(135deg, $spanish_pink $light_coral);
    background-image: url(../../img/bg-pattern-desktop.svg);
    background-size: cover;
    background-repeat: no-repeat;
