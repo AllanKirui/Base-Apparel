@@ -201,15 +201,12 @@ p {
   font-size: 0.8125rem;
 }
 
-.hero__footer .attribution a {
-  text-decoration: none;
-  color: #ce9797;
-}
-
 .hero__footer .attribution .link {
   cursor: pointer;
   position: relative;
   white-space: nowrap;
+  text-decoration: none;
+  color: #ce9797;
 }
 
 .hero__footer .attribution .link::before,
