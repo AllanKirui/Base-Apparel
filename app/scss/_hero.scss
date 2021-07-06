@@ -128,17 +128,14 @@
       .attribution {
          font-size: $font-sm;
 
-         a {
-            text-decoration: none;
-            color: $tuscany;
-         }
-
          // I'd like give credit to Free Frontend for the hover effect on the links
          // (https://freefrontend.com/css-link-styles/)
          .link {
             cursor: pointer;
             position: relative;
             white-space: nowrap;
+            text-decoration: none;
+            color: $tuscany;
          }
 
          .link::before,
