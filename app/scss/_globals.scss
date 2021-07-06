@@ -27,6 +27,11 @@ p {
    max-width: 90rem;
    height: 800px;
    //    position: relative;
+
+   @include breakpoint-down(small) {
+      height: 100%;
+      overflow-x: hidden;
+   }
 }
 
 // Flex Properties
@@ -43,5 +48,18 @@ p {
 
    &-ai-c {
       align-items: center;
+   }
+}
+
+// Visibility states
+.hide-for-mobile {
+   @include breakpoint-down(small) {
+      display: none;
+   }
+}
+
+.hide-for-desktop {
+   @include breakpoint-up(small) {
+      display: none;
    }
 }
