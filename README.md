@@ -43,8 +43,8 @@ Screenshot of the page on small-sized screens.
 
 ### Links
 
--  Solution URL: [Challenge Solution](https://www.frontendmentor.io/solutions/mobilefirst-workflow-using-sass-flexbox-and-css-grid-PHtHN5FQM)
--  Live Site URL: [Manage LP](https://allankirui.github.io/Manage-LP)
+-  Solution URL: [Challenge Solution](https://www.frontendmentor.io/solutions/desktopfirst-workflow-using-sass-guide-to-coding-challenges-included-Wj3J60OtM)
+-  Live Site URL: [Base Apparel](https://allankirui.github.io/Base-Apparel)
 
 ## My process
 
