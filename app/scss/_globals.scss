@@ -25,7 +25,7 @@ p {
 .container {
    margin: 0 auto;
    max-width: 90rem;
-   height: 800px;
+   height: 50rem;
 
    @include breakpoint-down(small) {
       height: 100%;

@@ -1,7 +1,7 @@
 .hero {
    max-width: 58%;
    height: 100%;
-   padding: 60px 140px 160px 185px;
+   padding: 3.75rem 8.75rem 10rem 11.5625rem;
    background: linear-gradient(135deg, $white, $lavender_blush),
       linear-gradient(135deg, $spanish_pink $light_coral);
    background-image: url(../../img/bg-pattern-desktop.svg);
@@ -9,34 +9,34 @@
    background-repeat: no-repeat;
 
    @include breakpoint-down(medium) {
-      padding: 60px 80px 160px 60px;
+      padding: 3.75rem 5rem 10rem 3.75rem;
    }
    @include breakpoint-down(small) {
       min-width: 100%;
       background-image: none;
-      padding: 0 30px;
+      padding: 0 1.875rem;
    }
 
    &__logo {
-      margin-bottom: 125px;
+      margin-bottom: 7.8125rem;
 
       @include breakpoint-down(small) {
-         margin: 27px 0;
+         margin: 1.6875rem 0;
 
          img {
-            height: 21px;
+            height: 1.3125rem;
          }
       }
    }
 
    &__text {
-      margin-top: 65px;
-      margin-bottom: 45px;
+      margin-top: 4.0625rem;
+      margin-bottom: 2.8125rem;
 
       h1 {
-         margin-bottom: 30px;
+         margin-bottom: 1.875rem;
          font-size: $font-xl;
-         letter-spacing: 15px;
+         letter-spacing: 0.9375rem;
 
          span {
             font-weight: 300;
@@ -45,14 +45,14 @@
       }
 
       p {
-         line-height: 25px;
+         line-height: 1.5625rem;
          color: $tuscany;
-         width: 432px;
+         width: 27rem;
       }
 
       @include breakpoint-down(small) {
-         margin-top: 62px;
-         margin-bottom: 36px;
+         margin-top: 3.875rem;
+         margin-bottom: 2.25rem;
 
          h1,
          p {
@@ -60,9 +60,9 @@
          }
 
          h1 {
-            margin-bottom: 25px;
+            margin-bottom: 1.5625rem;
             font-size: $font-md;
-            line-height: 44px;
+            line-height: 2.75rem;
          }
 
          p {
@@ -73,10 +73,10 @@
    }
 
    &__form {
-      width: 440px;
+      width: 27.5rem;
       form {
          position: relative;
-         margin-bottom: 150px;
+         margin-bottom: 9.375rem;
          z-index: 1;
 
          label {
@@ -84,7 +84,7 @@
          }
 
          input {
-            padding: 17px 32px;
+            padding: 1.0625rem 2rem;
             outline: none;
             border: none;
             width: 100%;
@@ -108,9 +108,9 @@
             right: 0;
             top: 0;
             bottom: 0;
-            padding: 16px 42px;
+            padding: 1rem 2.625rem;
             outline: none;
-            border-radius: 50px;
+            border-radius: 3.125rem;
             border: none;
             background: linear-gradient(to right, #f8bfbf, #ee8b8b);
             transition: background 0.2s ease-in-out;
@@ -128,7 +128,7 @@
                right: 0;
                top: 0;
                bottom: 0;
-               border-radius: 50px;
+               border-radius: 3.125rem;
                box-shadow: 0 10px 15px #f3dddc;
                z-index: -1;
             }
@@ -164,7 +164,7 @@
          width: 100%;
 
          form {
-            margin-bottom: 92px;
+            margin-bottom: 5.75rem;
 
             button {
                padding: 13.5px 28px;
@@ -179,7 +179,7 @@
 
    &__footer {
       .attribution {
-         width: 430px;
+         width: 26.875rem;
          font-size: $font-sml;
 
          // I'd like give credit to Free Frontend for the hover effect on the links
