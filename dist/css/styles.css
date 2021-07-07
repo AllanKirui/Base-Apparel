@@ -27,7 +27,7 @@ p {
 .container {
   margin: 0 auto;
   max-width: 90rem;
-  height: 800px;
+  height: 50rem;
 }
 
 @media (max-width: 56.1875rem) {
@@ -76,7 +76,7 @@ p {
 .hero {
   max-width: 58%;
   height: 100%;
-  padding: 60px 140px 160px 185px;
+  padding: 3.75rem 8.75rem 10rem 11.5625rem;
   background: linear-gradient(135deg, #ffffff, #fff5f5), linear-gradient(135deg, #f8bfbf #ee8b8b);
   background-image: url(../../img/bg-pattern-desktop.svg);
   background-size: cover;
@@ -85,7 +85,7 @@ p {
 
 @media (max-width: 69.3125rem) {
   .hero {
-    padding: 60px 80px 160px 60px;
+    padding: 3.75rem 5rem 10rem 3.75rem;
   }
 }
 
@@ -93,32 +93,32 @@ p {
   .hero {
     min-width: 100%;
     background-image: none;
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
 }
 
 .hero__logo {
-  margin-bottom: 125px;
+  margin-bottom: 7.8125rem;
 }
 
 @media (max-width: 56.1875rem) {
   .hero__logo {
-    margin: 27px 0;
+    margin: 1.6875rem 0;
   }
   .hero__logo img {
-    height: 21px;
+    height: 1.3125rem;
   }
 }
 
 .hero__text {
-  margin-top: 65px;
-  margin-bottom: 45px;
+  margin-top: 4.0625rem;
+  margin-bottom: 2.8125rem;
 }
 
 .hero__text h1 {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   font-size: 4rem;
-  letter-spacing: 15px;
+  letter-spacing: 0.9375rem;
 }
 
 .hero__text h1 span {
@@ -127,24 +127,24 @@ p {
 }
 
 .hero__text p {
-  line-height: 25px;
+  line-height: 1.5625rem;
   color: #ce9797;
-  width: 432px;
+  width: 27rem;
 }
 
 @media (max-width: 56.1875rem) {
   .hero__text {
-    margin-top: 62px;
-    margin-bottom: 36px;
+    margin-top: 3.875rem;
+    margin-bottom: 2.25rem;
   }
   .hero__text h1,
   .hero__text p {
     text-align: center;
   }
   .hero__text h1 {
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
     font-size: 2.5rem;
-    line-height: 44px;
+    line-height: 2.75rem;
   }
   .hero__text p {
     width: 100%;
@@ -153,12 +153,12 @@ p {
 }
 
 .hero__form {
-  width: 440px;
+  width: 27.5rem;
 }
 
 .hero__form form {
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 9.375rem;
   z-index: 1;
 }
 
@@ -167,7 +167,7 @@ p {
 }
 
 .hero__form form input {
-  padding: 17px 32px;
+  padding: 1.0625rem 2rem;
   outline: none;
   border: none;
   width: 100%;
@@ -203,9 +203,9 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 16px 42px;
+  padding: 1rem 2.625rem;
   outline: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   border: none;
   background: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8b8b));
   background: linear-gradient(to right, #f8bfbf, #ee8b8b);
@@ -226,7 +226,7 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   -webkit-box-shadow: 0 10px 15px #f3dddc;
           box-shadow: 0 10px 15px #f3dddc;
   z-index: -1;
@@ -263,7 +263,7 @@ p {
     width: 100%;
   }
   .hero__form form {
-    margin-bottom: 92px;
+    margin-bottom: 5.75rem;
   }
   .hero__form form button {
     padding: 13.5px 28px;
@@ -274,7 +274,7 @@ p {
 }
 
 .hero__footer .attribution {
-  width: 430px;
+  width: 26.875rem;
   font-size: 0.8125rem;
 }
 
