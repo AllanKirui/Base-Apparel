@@ -31,7 +31,7 @@ Users should be able to:
 
 ![](./img/markdown_images/1.png)
 
-Screenshot of page on full-sized screens.
+Screenshot of the page on full-sized screens.
 
 ![](./img/markdown_images/2.png)
 
